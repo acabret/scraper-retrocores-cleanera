@@ -6,7 +6,7 @@ async function scrapeAll(browserInstance) {
     browser = await browserInstance;
     let scrapedData = {};
     // Call the scraper for different set of books to be scraped
-    scrapedData["Cleanera"] = await pageScraper.scraper(browser, "Cleanera");
+    scrapedData["autoYapo"] = await pageScraper.scraper(browser);
     // scrapedData["HistoricalFiction"] = await pageScraper.scraper(browser, "Historical Fiction");
     // scrapedData["Mystery"] = await pageScraper.scraper(browser, "Mystery");
     await browser.close();
